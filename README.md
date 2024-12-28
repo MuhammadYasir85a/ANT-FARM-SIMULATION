@@ -1,5 +1,6 @@
 # ANT-FARM-SIMULATION
 #TASK 02 
+
 Description
 The Ant Farm Simulation is a C++ program that models the behavior and management of ant colonies. Users can create and control multiple colonies, each with different types of ants (Drones, Warriors, and Queens) and rooms (Spawner and Relax rooms). The simulation operates in ticks, allowing ants to gather resources, rest, and engage in battles. This project demonstrates object-oriented programming concepts and design patterns in C++.
 
