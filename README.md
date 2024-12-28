@@ -13,21 +13,50 @@ How to Use
 Clone the repository.
 Compile the code using a C++ compiler.
 Run the program and enter commands to interact with the simulation
+
+
 OUTPUT:
 AntFarm Simulation Initiated. Enter commands (type 'exit' to terminate):
-> spawn
-New colony spawned with ID: 1
-> give 1 water 100
-> give 1 food 100
-> give 1 warrior 19
-> give 1 drone 3
-> summary 1
-Colony ID: 1
-Species: generic
-Ant Count: 23
-Food Stock: 100
-Water Stock: 100
-> tick alive
-SpawnerRoom is producing new ants.
-RelaxRoom is providing rest to ants.
-Simulation ends: One or fewer active colonies remain.
+> spawn 14 -32 Killer
+New colony spawned at (14,-32) with ID: 13968
+> give 13968 warrior 10
+> give 13968 food 50
+> tick 10
+> summary 13968
+Species: Killer
+Workers: 0
+Warriors: 10
+Ant Kills: 0
+Colony kills: 0
+Ticks alive: 10
+Status: Alive
+> give 13968 drone 14
+> tick 100
+> summary 13968
+Species: Killer
+Workers: 14
+Warriors: 10
+Ant Kills: 0
+Colony kills: 0
+Ticks alive: 110
+Status: Alive
+> spawn 20 -40 Gatherer
+New colony spawned at (20,-40) with ID: 19960
+> tick 50
+> summary 13968
+Species: Killer
+Workers: 14
+Warriors: 10
+Ant Kills: 0
+Colony kills: 0
+Ticks alive: 160
+Status: Alive
+> summary 19960
+Species: Gatherer
+Workers: 0
+Warriors: 0
+Ant Kills: 0
+Colony kills: 0
+Ticks alive: 50
+Status: Alive
+>
